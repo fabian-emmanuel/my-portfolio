@@ -7,8 +7,6 @@ R
 ,src/components/testimonials/testimonials.css,9/f/9f049ab71664383541a005c55e97930a12306546
 P
  src/components/footer/footer.css,2/a/2ace3ec22effda0638def30246fc8b3a06c0970a
-V
-&src/components/portfolio/portfolio.css,7/2/7219647c5bffbf11cecd2fd99ec16774e830427c
 P
  src/components/footer/Footer.jsx,5/e/5eda6efab9e547ce04f5d8f675aa206592e76d42
 A
