@@ -3,8 +3,6 @@
 src/index.js,f/9/f900edc44cb929c2267a16100a32851f6d5b477d
 R
 "src/components/contact/contact.css,e/a/ea19aec0fb704a5c7257404b62845aa72a4da77c
-X
-(src/components/experience/experience.css,6/2/6226ddcd1158cf16f5b18f9c8422c87bbc9dc393
 \
 ,src/components/testimonials/testimonials.css,9/f/9f049ab71664383541a005c55e97930a12306546
 P
