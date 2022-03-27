@@ -1,6 +1,5 @@
 import "./portfolio.css";
-
-import {data} from "./data";
+import {portfolio_data} from "./portfolio_data";
 
 const Portfolio = () => {
     return(
@@ -9,20 +8,19 @@ const Portfolio = () => {
          <h2>Portfolio</h2>
            <div className="container container__portfolio">
              {
-               data.map(({id, image, title, github, demo}) => {
-                 return (
-                    <article key={id} className="portfolio__item">
-                      <div className="portfolio__item-image">
-                        <img src={image} alt={title}/>
-                      </div>
-                      <h3>{title}</h3>
-                      <div className="portfolio__item-cta">
-                        <a href={github} className="btn" target="_blank" rel="noreferrer">Github</a>
-                        <a href={demo} className="btn btn-primary" target="_blank" rel="noreferrer">Live Demo</a>
-                      </div>
-                    </article>
-                 );
-               })
+               portfolio_data.map(({id, image, title, github, demo}) =>
+                  (
+                     <article key={id} className="portfolio__item">
+                       <div className="portfolio__item-image">
+                         <img src={image} alt={title}/>
+                       </div>
+                       <h3>{title}</h3>
+                       <div className="portfolio__item-cta">
+                         <a href={github} className="btn" target="_blank" rel="noreferrer">Github</a>
+                         <a href={demo} className="btn btn-primary" target="_blank" rel="noreferrer">Live Demo</a>
+                       </div>
+                     </article>
+                  ))
              }
            </div>
        </section>

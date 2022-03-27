@@ -5,7 +5,7 @@ import IMG4 from "../../assets/portfolio4.jpg";
 import IMG5 from "../../assets/portfolio5.png";
 import IMG6 from "../../assets/portfolio6.jpg";
 
-export const data = [
+export const portfolio_data = [
   {
     id: 1,
     image: IMG1,
