@@ -1,8 +1,4 @@
 
-P
- src/components/footer/footer.css,2/a/2ace3ec22effda0638def30246fc8b3a06c0970a
-P
- src/components/footer/Footer.jsx,5/e/5eda6efab9e547ce04f5d8f675aa206592e76d42
 A
 public/index.html,f/4/f43ecdf8d666ee908aacce037b4cd72159e4741b
 ;
