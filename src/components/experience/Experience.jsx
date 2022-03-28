@@ -1,5 +1,6 @@
 import "./experience.css";
 import {BsFillPatchCheckFill} from "react-icons/bs";
+import {experience_data} from "./experience_data";
 
 
 const Experience = () => {
@@ -9,95 +10,26 @@ const Experience = () => {
        <h2>My Experience</h2>
        <div className="container experience__container">
 
-         <div className="experience__uiux">
-           <h3>UI-UX Design</h3>
-           <div className="experience__content">
-             <article className="experience__details">
-               <BsFillPatchCheckFill className="experience__details-icon"/>
-               <div>
-               <h4>Figma</h4>
-               <small>Experienced</small>
+         {
+           experience_data.map((item) => (
+               <div key={item.id} className="experience__uiux">
+                 <h3>{item.title}</h3>
+                 <div className="experience__content">
+                   {
+                     item.desc.map((val, index) => (
+                         <article key={index} className="experience__details">
+                           <BsFillPatchCheckFill className="experience__details-icon"/>
+                           <div>
+                             <h4>{val.option}</h4>
+                             <small>{val.level}</small>
+                           </div>
+                         </article>
+                     ))
+                   }
+                 </div>
                </div>
-             </article>
-
-             <article className="experience__details">
-               <BsFillPatchCheckFill className="experience__details-icon"/>
-               <div>
-                 <h4>Figma</h4>
-                 <small>Experienced</small>
-               </div>
-             </article>
-
-             <article className="experience__details">
-               <BsFillPatchCheckFill className="experience__details-icon"/>
-               <div>
-                 <h4>Figma</h4>
-                 <small>Experienced</small>
-               </div>
-             </article>
-
-             <article className="experience__details">
-               <BsFillPatchCheckFill className="experience__details-icon"/>
-               <div>
-                 <h4>Figma</h4>
-                 <small>Experienced</small>
-               </div>
-             </article>
-
-             <article className="experience__details">
-               <BsFillPatchCheckFill className="experience__details-icon"/>
-               <div>
-                 <h4>Figma</h4>
-                 <small>Experienced</small>
-               </div>
-             </article>
-           </div>
-         </div>
-
-         <div className="experience__frontend">
-           <h3>FrontEnd Development</h3>
-           <div className="experience__content">
-             <article className="experience__details">
-               <BsFillPatchCheckFill className="experience__details-icon"/>
-               <div>
-                 <h4>Figma</h4>
-                 <small>Experienced</small>
-               </div>
-             </article>
-
-             <article className="experience__details">
-               <BsFillPatchCheckFill className="experience__details-icon"/>
-               <div>
-                 <h4>Figma</h4>
-                 <small>Experienced</small>
-               </div>
-             </article>
-
-             <article className="experience__details">
-               <BsFillPatchCheckFill className="experience__details-icon"/>
-               <div>
-                 <h4>Figma</h4>
-                 <small>Experienced</small>
-               </div>
-             </article>
-
-             <article className="experience__details">
-               <BsFillPatchCheckFill className="experience__details-icon"/>
-               <div>
-                 <h4>Figma</h4>
-                 <small>Experienced</small>
-               </div>
-             </article>
-
-             <article className="experience__details">
-               <BsFillPatchCheckFill className="experience__details-icon"/>
-               <div>
-                 <h4>Figma</h4>
-                 <small>Experienced</small>
-               </div>
-             </article>
-           </div>
-         </div>
+           ))
+         }
        </div>
      </section>
   )

@@ -5,10 +5,6 @@ A
 src/App.jsx,c/0/c0e9e59a467e1546695bfa22746b302540797a4e
 N
 src/components/about/about.css,5/b/5b6ec09a64fa782717cb1fb8958c25a3b5409473
-X
-(src/components/experience/Experience.jsx,9/5/959ed797b12f7bc7b3ea060498be374af60c4a81
-X
-(src/components/experience/experience.css,6/2/6226ddcd1158cf16f5b18f9c8422c87bbc9dc393
 T
 $src/components/services/services.css,d/5/d5128d4e1a1a270cad8b5206f972d0cb4baf0c90
 V
@@ -33,5 +29,3 @@ M
 src/index.js,f/9/f900edc44cb929c2267a16100a32851f6d5b477d
 _
 /src/components/testimonials/testimonial_data.js,c/9/c9ef1d9822f75f79f6dcb7e1d8b75d13bc936679
-P
- src/components/footer/footer.css,2/a/2ace3ec22effda0638def30246fc8b3a06c0970a
