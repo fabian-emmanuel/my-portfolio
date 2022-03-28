@@ -15,8 +15,6 @@ Z
 *src/components/portfolio/portfolio_data.js,6/f/6f7e9807617b1d26b3d64051ed3f7eebe816a26d
 V
 &src/components/portfolio/Portfolio.jsx,0/9/093b8396b1debf8cf63908a329be823a587aed3b
-P
- src/components/header/header.css,e/b/eb34f04faa66c967045a80642c55e3ae97272056
 J
 src/components/nav/nav.css,2/3/2300cbfe8db6e7f204b585d55bd626c835557607
 \

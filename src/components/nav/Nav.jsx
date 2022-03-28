@@ -3,6 +3,7 @@ import {ImHome2} from "react-icons/im";
 import {FaUserAlt} from "react-icons/fa";
 import {RiBookmark3Fill, RiContactsBookFill, RiServiceFill} from "react-icons/ri";
 import {useState} from "react";
+import {MdContactPhone} from "react-icons/md";
 
 const Nav = () => {
   const [activeNav, setActiveNav] = useState("#");
@@ -26,6 +27,10 @@ const Nav = () => {
        <a href={"#testimonials"} onClick={() => setActiveNav("#testimonials")}
           className={activeNav === "#testimonials" ? "active" : ""}>
          <RiContactsBookFill/>
+       </a>
+         <a href={"#contact"} onClick={() => setActiveNav("#contact")}
+          className={activeNav === "#contact" ? "active" : ""}>
+         <MdContactPhone/>
        </a>
      </nav>
   )
