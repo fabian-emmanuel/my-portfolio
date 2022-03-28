@@ -1,7 +1,6 @@
 import "./about.css"
 import ME from "../../assets/me-about.jpg"
-import {FaAward, FaUsers} from "react-icons/fa";
-import {VscFolderActive} from "react-icons/vsc";
+import {about_data} from "./about_data";
 
 const About = () => {
   return(
@@ -13,30 +12,22 @@ const About = () => {
 
         <div className="about__me">
           <div className="about__me-image">
-            <img src={ME} alt="About Image"/>
+            <img src={ME} alt="Me"/>
           </div>
         </div>
 
         <div className="about__content">
 
           <div className="about__cards">
-             <article className="about__card">
-               <FaAward className="about__card-icon"/>
-               <h5>Experience</h5>
-               <small>7+ Years Working</small>
-             </article>
-
-             <article className="about__card">
-               <FaUsers className="about__card-icon"/>
-               <h5>Clients</h5>
-               <small>200+ Worldwide</small>
-             </article>
-
-             <article className="about__card">
-               <VscFolderActive className="about__card-icon"/>
-               <h5>Projects</h5>
-               <small>50+ Completed</small>
-             </article>
+              {
+                  about_data.map((item) => (
+                 <article key={item.id} className="about__card">
+                   <item.icon className="about__card-icon"/>
+                   <h5>{item.title}</h5>
+                   <small>{item.summary}</small>
+                 </article>
+                  ))
+              }
            </div>
 
           <p>
